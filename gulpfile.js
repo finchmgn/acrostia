@@ -77,7 +77,8 @@ gulp.task('watch', function() {
 gulp.task('buildCode', async function() {
     var buildCss    = gulp.src([
         'app/css/main.css',
-        'app/css/libs.min.css'
+        'app/css/libs.min.css',
+        'app/css/fonts.css',
     ])
     .pipe(gulp.dest('dist/css'));
 
