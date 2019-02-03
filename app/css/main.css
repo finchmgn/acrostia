@@ -79,10 +79,10 @@ header.acrostia__header {
   transition: all 0.2s ease-in;
   font-weight: 300; }
 
-.acrostia__nav-item-home {
+.acrostia__nav-item-home.active {
   background-color: #74c7d5; }
 
-.acrostia__nav-item-services .active {
+.acrostia__nav-item-services.active {
   background-color: #df5c64; }
 
 .acrostia__nav-item-about.active {
