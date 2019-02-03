@@ -5,26 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="fonts/fontawesome/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/libs.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>Acrostia</title>
 </head>
 <body>
-    
     <div class="header__menu_sm d-lg-none">
-        <p class="header__menu-close_sm"><i class="fas fa-bars"></i></p>
+        <p class="header__menu-close_sm"><i class="fas fa-times"></i></p>
+        <div class="header__logo-block">
+            <a class="header__logo" href="index.html"></a>
+        </div>
     </div>
     <header class="acrostia__header header">
         <div class="container acrostia__header-container">
             <div class="row header__row">
                 <div class="header__col d-lg-none col-md-4 col-sm-4 col-3">
                     <div class="header__menu-toggle-block_sm">
-                        <i class="icofont-navigation-menu"></i>
+                        <i class="fas fa-bars"></i>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-8 col-sm-8 col-9 header__col">
+                <div class="header__col d-none d-lg-block col-lg-2 col-md-8 col-sm-8 col-9">
                     <div class="header__logo-block">
-                        <a class="header__logo" href="index.html">acrostia</a>
+                        <a class="header__logo" href="index.html"></a>
                     </div>
                 </div>
                 <div class="header__col header__col-menu d-none d-lg-block col-lg-10">
@@ -91,7 +94,7 @@
             <div class="acrostia__section-content services__content">
                 <div class="container services__container">
                     <p class="acrostia__title">Our services</p>
-                    <p class="acrostia__subtitle">Nam libero tempore, cum <a href="#">soluta</a> nobis est eligendi optio 
+                    <p class="acrostia__subtitle">Nam libero tempore, facere <a href="#">soluta</a> nobis est eligendi optio 
                         cumque nihil impedit.</p>
                     <p class="acrostia__descrip">At vero eos et accusamus et iusto odio dignissimos ducimus 
                         qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas 
@@ -101,10 +104,46 @@
                         <div class="col-lg-3 col-md-3 col-sm-6 col-12 services__col">
                             <div class="services__item">
                                 <div class="services__item-icon-block">
-                                    <i></i>
+                                    <i class="far fa-lightbulb"></i>
                                 </div>
                                 <div class="services__item-text">
                                     <p class="services__item-header">Researching</p>
+                                    <p class="services__item-descrip acrostia__descrip">Itaque earum rerum hic tenetur a sapiente delectus, 
+                                        ut aut reiciendis voluptatibus maiores alias consequatur</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-12 services__col">
+                            <div class="services__item">
+                                <div class="services__item-icon-block">
+                                    <i class="fas fa-magic"></i>
+                                </div>
+                                <div class="services__item-text">
+                                    <p class="services__item-header">Design</p>
+                                    <p class="services__item-descrip acrostia__descrip">Itaque earum rerum hic tenetur a sapiente delectus, 
+                                        ut aut reiciendis voluptatibus maiores alias consequatur</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-12 services__col">
+                            <div class="services__item">
+                                <div class="services__item-icon-block">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <div class="services__item-text">
+                                    <p class="services__item-header">Development</p>
+                                    <p class="services__item-descrip acrostia__descrip">Itaque earum rerum hic tenetur a sapiente delectus, 
+                                        ut aut reiciendis voluptatibus maiores alias consequatur</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-12 services__col">
+                            <div class="services__item">
+                                <div class="services__item-icon-block">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <div class="services__item-text">
+                                    <p class="services__item-header">Launch</p>
                                     <p class="services__item-descrip acrostia__descrip">Itaque earum rerum hic tenetur a sapiente delectus, 
                                         ut aut reiciendis voluptatibus maiores alias consequatur</p>
                                 </div>
@@ -116,7 +155,45 @@
         </section>
         <section class="acrostia__section about" data-section-name="about">
             <div class="acrostia__section-content about__content">
-                
+                <div class="container about__container">
+                    <p class="acrostia__title">Who we are & what we do</p>
+                    <p class="acrostia__descrip">At vero eos et accusamus et iusto odio dignissimos ducimus 
+                        qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas 
+                        molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa 
+                        qui officia deserunt mollitia animi.</p>
+                    <p class="about__team-header">Meet the team</p>
+                    <div class="about__team-header-triangle"></div>   
+                    <div class="row about__team-row">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-12 about__team-col">
+                            <div class="about__team-item">
+                                <div class="about__team-item-icon-block">
+                                    <i class="far fa-lightbulb"></i>
+                                </div>
+                                <div class="about__team-item-text">
+                                    <p class="about__team-item-header">Anton Petrov</p>
+                                    <p class="about__team-item-descrip acrostia__descrip">General manager</p>
+                                </div>
+                                <div class="about__team-social">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <a class="about__team-social-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </div>
+                                        <div class="col-3">
+                                            <a class="about__team-social-link" href="#"><i class="fab fa-twitter"></i></a>
+                                        </div>
+                                        <div class="col-3">
+                                            <a class="about__team-social-link" href="#"><i class="fab fa-google-plus-g"></i></a>
+                                        </div>
+                                        <div class="col-3">
+                                            <a class="about__team-social-link" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
                 
 
             </div>
@@ -137,7 +214,7 @@
         </section>
     </main>
 
-
+    
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
 </body>
