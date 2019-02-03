@@ -277,6 +277,10 @@ header.acrostia__header {
   border-right: 8px solid transparent;
   border-top: 8px solid #a1ca6c; }
 
+.about__team-item {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px 15px; }
+
 /*   works section  */
 .works {
   background-color: #81a256;

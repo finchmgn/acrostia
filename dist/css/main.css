@@ -2,6 +2,13 @@ body {
   font-family: "Lato";
   position: relative; }
 
+a {
+  -webkit-transition: color 0.1s ease-in;
+  -o-transition: color 0.1s ease-in;
+  transition: color 0.1s ease-in; }
+  a:hover {
+    text-decoration: none; }
+
 .acrostia__section {
   background-size: cover;
   -o-background-size: cover;
@@ -24,9 +31,11 @@ body {
   text-transform: uppercase; }
   .acrostia__subtitle a {
     color: rgba(249, 249, 249, 0.5); }
+    .acrostia__subtitle a:hover {
+      color: rgba(249, 249, 249, 0.7); }
 
 .acrostia__descrip {
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 300;
   text-align: center;
   color: #f9f9f9; }
@@ -105,7 +114,9 @@ header.acrostia__header {
             flex: 0 1 auto;
     -webkit-align-self: auto;
         -ms-flex-item-align: auto;
-            align-self: auto; }
+            align-self: auto;
+    padding-top: 70px;
+    padding-bottom: 70px; }
 
 .header__logo {
   font-family: "Damion";
@@ -196,18 +207,79 @@ header.acrostia__header {
 
 .services__item {
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 20px 15px; }
+  padding: 20px 15px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  -webkit-transition: background-color 0.1s ease-in;
+  -o-transition: background-color 0.1s ease-in;
+  transition: background-color 0.1s ease-in; }
+  .services__item:hover {
+    background-color: rgba(255, 255, 255, 0.4); }
 
 .services__item-header {
   text-align: center;
   font-weight: 300;
   color: #f9f9f9;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding-top: 12px; }
+
+.services__item-icon-block {
+  background-color: #f9f9f9;
+  height: 70px;
+  width: 70px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  padding: 3px;
+  margin-left: auto;
+  margin-right: auto; }
+  .services__item-icon-block i {
+    font-size: 32px;
+    color: #b64b52;
+    background-color: #f9f9f9;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 64px;
+    width: 64px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    padding: 13px 9px;
+    border: 3px solid #b64b52; }
 
 /*  about section  */
 .about {
   background-color: #665464;
   background-image: url(../img/about__bg-overlay.jpg); }
+
+.about__team-header {
+  color: #f9f9f9;
+  text-transform: uppercase;
+  font-weight: 900;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+  background-color: #a1ca6c;
+  text-align: center;
+  max-width: 190px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  margin-bottom: 0; }
+
+.about__team-header-triangle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #a1ca6c; }
+
+.about__team-item {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px 15px; }
 
 /*   works section  */
 .works {

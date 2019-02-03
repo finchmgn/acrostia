@@ -1,3 +1,8 @@
+$(function getAcrostiaName() {
+    var acrostiaLogo='acrostia';
+    $('.header__logo').html(acrostiaLogo);
+})
+
 $(function() {
     $.scrollify({
         section : ".acrostia__section",
