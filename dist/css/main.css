@@ -16,6 +16,21 @@ body {
   color: #f9f9f9;
   text-transform: uppercase; }
 
+.acrostia__subtitle {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  color: #f9f9f9;
+  text-transform: uppercase; }
+  .acrostia__subtitle a {
+    color: rgba(249, 249, 249, 0.5); }
+
+.acrostia__descrip {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  color: #f9f9f9; }
+
 /*  header  */
 .header__menu_sm {
   width: 300px;
@@ -53,7 +68,7 @@ header.acrostia__header {
     line-height: 50px;
     color: #f9f9f9; }
 
-.acrostia__section-content {
+.services__content, .about__content, .works__content, .contacts__content {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -79,7 +94,7 @@ header.acrostia__header {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
-  .acrostia__section-content .container {
+  .services__content .container, .about__content .container, .works__content .container, .contacts__content .container {
     -webkit-box-ordinal-group: 1;
     -webkit-order: 0;
         -ms-flex-order: 0;
@@ -178,6 +193,16 @@ header.acrostia__header {
 .services {
   background-color: #b64b52;
   background-image: url(../img/services__bg-overlay.jpg); }
+
+.services__item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px 15px; }
+
+.services__item-header {
+  text-align: center;
+  font-weight: 300;
+  color: #f9f9f9;
+  text-transform: uppercase; }
 
 /*  about section  */
 .about {
