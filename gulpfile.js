@@ -83,7 +83,10 @@ gulp.task('buildCode', async function() {
     ])
     .pipe(gulp.dest('dist/css'));
 
-    var buildFonts  = gulp.src('app/fonts/**/*')
+    var buildFonts  = gulp.src([
+        'app/fonts/**/*',
+        '!app/fonts/icofont/icofont.css',
+    ])
     .pipe(gulp.dest('dist/fonts'));
 
     var buildJs     = gulp.src('app/js/**/*')
