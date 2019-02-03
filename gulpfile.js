@@ -72,7 +72,6 @@ gulp.task('watch', function() {
     gulp.watch('app/sass/**/*.+(sass|scss)', gulp.parallel('sass'));
     gulp.watch('app/*.html').on('change', browserSync.reload);
     gulp.watch('app/js/**/*.js').on('change', browserSync.reload);
-    gulp.watch('app/css/fonts.css').on('change', browserSync.reload);;
 });
 
 gulp.task('buildCode', async function() {
@@ -84,8 +83,7 @@ gulp.task('buildCode', async function() {
     .pipe(gulp.dest('dist/css'));
 
     var buildFonts  = gulp.src([
-        'app/fonts/**/*',
-        '!app/fonts/icofont/icofont.css',
+        'app/fonts/**/*'
     ])
     .pipe(gulp.dest('dist/fonts'));
 
