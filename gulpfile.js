@@ -34,6 +34,7 @@ gulp.task('scripts', function() {
         'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
         'app/libs/Scrollify/jquery.scrollify.js',
         'app/libs/bootstrap-4.2.1-dist/js/bootstrap.min.js',
+        'app/fonts/fontawesome/js/all.min.js',
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
