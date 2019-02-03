@@ -6329,7 +6329,8 @@ a.close.disabled {
   padding-left: 0;
   margin-right: 15%;
   margin-left: 15%;
-  list-style: none; }
+  list-style: none;
+  margin-bottom: 40px; }
 
 .carousel-indicators li {
   -webkit-box-sizing: content-box;
@@ -6338,10 +6339,10 @@ a.close.disabled {
   -webkit-box-flex: 0;
   -webkit-flex: 0 1 auto;
           flex: 0 1 auto;
-  width: 30px;
-  height: 3px;
-  margin-right: 3px;
-  margin-left: 3px;
+  width: 20px;
+  height: 20px;
+  margin-right: 14px;
+  margin-left: 14px;
   text-indent: -999px;
   cursor: pointer;
   background-color: #fff;
@@ -6349,6 +6350,8 @@ a.close.disabled {
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   opacity: .5;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   -webkit-transition: opacity 0.6s ease;
   -o-transition: opacity 0.6s ease;
   transition: opacity 0.6s ease; }
@@ -6360,18 +6363,21 @@ a.close.disabled {
     transition: none; } }
 
 .carousel-indicators .active {
-  opacity: 1; }
+  opacity: 1;
+  background-color: #74c7d5;
+  -webkit-transition: background-color 0.6s ease;
+  -o-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease; }
 
 .carousel-caption {
   position: absolute;
   right: 15%;
-  bottom: 20px;
+  bottom: 50%;
   left: 15%;
   z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
   color: #fff;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: -90px; }
 
 @-webkit-keyframes spinner-border {
   to {
