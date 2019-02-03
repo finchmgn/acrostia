@@ -1,3 +1,5 @@
+
+$text-main-color: #f9f9f9     
 $home-color: #bfa27b
 $services-color: #b64b52
 $about-color: #665464
@@ -25,9 +27,23 @@ body
     font-size: 36px
     font-weight: 300
     text-align: center
-    color: #f9f9f9
+    color: $text-main-color
     text-transform: uppercase
 
+.acrostia__subtitle
+    font-size: 20px
+    font-weight: 300
+    text-align: center
+    color: $text-main-color
+    text-transform: uppercase
+    a
+        color: rgba($text-main-color,.5)
+
+.acrostia__descrip
+    font-size: 14px
+    font-weight: 300
+    text-align: center
+    color: $text-main-color
 /*  header  */
 
 .header__menu_sm
@@ -46,7 +62,7 @@ body
     margin-right: 10px
     text-align: right
     i
-        color: #f9f9f9
+        color: $text-main-color
         cursor: pointer
         font-size: 50px
 
@@ -62,7 +78,7 @@ header.acrostia__header
     i
         font-size: 50px
         line-height: 50px
-        color: #f9f9f9
+        color: $text-main-color
 
 .services__content, .about__content, .works__content, .contacts__content
     height: 100%
@@ -83,7 +99,7 @@ header.acrostia__header
     color: #f9f9f9
     font-size: 50px
     &:hover
-        color: #f9f9f9
+        color: $text-main-color
         text-decoration: none
 
 .acrostia__nav-item
@@ -92,7 +108,7 @@ header.acrostia__header
     background-color: transparent
     border-bottom-left-radius: 8px
     border-bottom-right-radius: 8px
-    color: #f9f9f9
+    color: $text-main-color
     transition: all 0.2s ease-in
     font-weight: 300
 
@@ -161,6 +177,16 @@ header.acrostia__header
 .services
     background-color: $services-color
     background-image: url(../img/services__bg-overlay.jpg)
+
+.services__item
+    background-color: rgba(255, 255, 255, 0.1)
+    padding: 20px 15px
+
+.services__item-header
+    text-align: center
+    font-weight: 300
+    color: $text-main-color
+    text-transform: uppercase
 
 /*  about section  */
 .about
