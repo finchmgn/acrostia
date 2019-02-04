@@ -87,3 +87,27 @@ $(window).resize(function() {
 
     }
 });
+
+$(function() {
+    $('.about__team-item').mouseenter( function() {
+        $(this).css('background-color', 'rgba(0, 0, 0, 0.2)');
+        $(this).find('.about__team-item-image-block').css('background-color', '#df5c64');
+        $(this).find('i.fa-facebook-f').css('background-color', '#4f689e');
+        $(this).find('i.fa-twitter').css('background-color', '#74c7d5');
+        $(this).find('i.fa-google-plus-g').css('background-color', '#df5c64');
+        $(this).find('i.fa-linkedin-in').css('background-color', '#3e61af');
+        /*text color*/
+        $(this).find('.about__team-item-header').css('color', 'rgba(255, 255, 255, 1)');
+
+    }); 
+
+
+
+    $('.about__team-item').mouseleave( function() {
+        $(this).css('background-color', 'rgba(0, 0, 0, 0.1)');
+        $(this).find('.about__team-item-image-block').css('background-color', '#91778e');
+        $(this).find('i').css('background-color', '#91778e');
+        /*text color*/
+        $(this).find('.about__team-item-header').css('color', 'rgba(255, 255, 255, 0.6)');
+    }); 
+});

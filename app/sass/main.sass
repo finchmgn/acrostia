@@ -61,10 +61,21 @@ a
     background-color: #5799de
     margin-left: -300px
     transition: all 0.3s ease-in
+    .header__logo-block
+        text-align: center
+        line-height: 1
+        margin-bottom: 10px
+    ul
+        li
+            width: 100%
+            border-bottom-left-radius: 0
+            border-bottom-right-radius: 0
+            font-size: 16px  
 
 .header__menu-close_sm
     margin-top: 12px
     margin-right: 10px
+    margin-bottom: 0
     text-align: right
     i
         color: $text-main-color
@@ -229,6 +240,9 @@ header.acrostia__header
     background-color: $about-color
     background-image: url(../img/about__bg-overlay.jpg)
 
+.about__descrip 
+    margin-bottom: 40px
+
 .about__team-header
     color: $text-main-color   
     text-transform: uppercase
@@ -252,14 +266,59 @@ header.acrostia__header
     border-left: 8px solid transparent
     border-right: 8px solid transparent
     border-top: 8px solid $works-color_active
+.about__team-col
+    margin-top: 40px
 
 .about__team-item
     background-color: rgba(0, 0, 0, 0.1)
     padding: 20px 15px
+    transition: all 0.2s ease-in
 
 .about__team-item-image-block
-    
+    width: 138px
+    height: 138px
+    display: block
+    margin-left: auto
+    margin-right: auto
+    border-radius: 50%
+    background-color: #91778e
+    padding: 4px
+    transition: background-color 0.2s ease-in
+    .about__team-item-image
+        max-width: 130px
+        max-height: 130px
+        display: block
+        margin-left: auto
+        margin-right: auto
+        border-radius: 50%
+        border: 3px solid #f9f9f9
 
+.about__team-item-header 
+    text-transform: uppercase
+    font-weight: 900
+    font-size: 18px
+    text-align: center
+    color: rgba(255, 255, 255, 0.6)
+    margin-top: 20px
+    margin-bottom: 0
+    transition: color 0.2s ease-in
+
+.about__team-item-descrip 
+    transition: color 0.2s ease-in
+
+.about__team-social
+    margin-top: 30px
+    .about__team-social-link
+        i
+            display: block
+            text-align: center
+            color: #f9f9f9
+            background-color: #91778e
+            border-radius: 50%
+            padding: 9px 8px
+            height: 35px
+            width: 35px
+            transition: background-color 0.2s ease-in
 
 /*   works section  */
 .works
