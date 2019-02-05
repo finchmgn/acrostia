@@ -338,6 +338,7 @@ header.acrostia__header {
   transition: color 0.2s ease-in; }
 
 .about__team-item-descrip {
+  color: #81a256;
   -webkit-transition: color 0.2s ease-in;
   -o-transition: color 0.2s ease-in;
   transition: color 0.2s ease-in; }
@@ -367,6 +368,11 @@ header.acrostia__header {
 .contacts {
   background-color: #75b4aa;
   background-image: url(../img/contacts__bg-overlay.jpg); }
+
+.contacts__header {
+  font-size: 18px;
+  color: #f9f9f9;
+  font-weight: 300; }
 
 /*  temp    */
 /*  media-queries   */

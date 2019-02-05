@@ -98,6 +98,7 @@ $(function() {
         $(this).find('i.fa-linkedin-in').css('background-color', '#3e61af');
         /*text color*/
         $(this).find('.about__team-item-header').css('color', 'rgba(255, 255, 255, 1)');
+        $(this).find('.about__team-item-descrip').css('color', '#df5c64');
 
     }); 
 
@@ -109,5 +110,6 @@ $(function() {
         $(this).find('i').css('background-color', '#91778e');
         /*text color*/
         $(this).find('.about__team-item-header').css('color', 'rgba(255, 255, 255, 0.6)');
+        $(this).find('.about__team-item-descrip').css('color', '#81a256');
     }); 
 });
