@@ -35,7 +35,7 @@ a {
       color: rgba(249, 249, 249, 0.7); }
 
 .acrostia__descrip {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 300;
   text-align: center;
   color: #f9f9f9; }
@@ -373,6 +373,31 @@ header.acrostia__header {
   font-size: 18px;
   color: #f9f9f9;
   font-weight: 300; }
+
+.contacts__address-company-name {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(249, 249, 249, 0.6); }
+
+.contacts__address-address {
+  font-size: 12px;
+  color: #f9f9f9;
+  font-weight: 300;
+  margin-bottom: 50px; }
+
+.constacts__address-name {
+  font-size: 12px;
+  color: rgba(249, 249, 249, 0.6);
+  font-weight: 300;
+  padding-right: 15px; }
+
+.constacts__address-value a {
+  font-size: 12px;
+  color: #f9f9f9;
+  font-weight: 300; }
+
+.contacts__ask-form-item {
+  background-color: #68a097; }
 
 /*  temp    */
 /*  media-queries   */
