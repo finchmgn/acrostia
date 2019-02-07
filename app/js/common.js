@@ -116,5 +116,5 @@ $(function() {
 
 /*  Mask for input in contact form */
 $(function(){
-    $("#contactsPhoneNumber").mask("+");
+    $("#contactsPhoneNumber").mask("+9 (999) 999-9999");
 });
