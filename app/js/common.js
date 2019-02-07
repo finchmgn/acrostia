@@ -113,3 +113,8 @@ $(function() {
         $(this).find('.about__team-item-descrip').css('color', '#81a256');
     }); 
 });
+
+/*  Mask for input in contact form */
+$(function(){
+    $("#contactsPhoneNumber").mask("+");
+});
