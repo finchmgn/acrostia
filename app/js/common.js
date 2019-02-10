@@ -44,21 +44,21 @@ jQuery(function($){
 
 /*  change sections class if small screen   */
 /*  on load  */
-jQuery(function($) {
+/*jQuery(function($) {
     if ( $(window).width() <= 1279 ) {
-        $.scrollify.disable();  
+        $('section').removeClass('acrostia__section');
     } else {
-        $.scrollify.enable();
+        $('section').addClass('acrostia__section');
     }
-});
+});*/
 /*on resize */
-$(window).resize(function() {
+/*$(window).resize(function() {
     if ( $(window).width() <= 1279 ) {
-        $.scrollify.disable();
+        $('section').removeClass('acrostia__section');
     } else {
-        $.scrollify.enable();
+        $('section').addClass('acrostia__section');
     }
-});
+});*/
 
 /*  menu toggle   */
 jQuery(function($) {
@@ -69,6 +69,9 @@ jQuery(function($) {
         $('.header__menu_sm').css('margin-left', '-300px');
     });
     $('.acrostia__main').click(function() {
+        $('.header__menu_sm').css('margin-left', '-300px');
+    });
+    $('li.acrostia__nav-item').click(function() {
         $('.header__menu_sm').css('margin-left', '-300px');
     });
 });
