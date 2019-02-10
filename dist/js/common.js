@@ -42,6 +42,24 @@ jQuery(function($){
     });
 });
 
+/*  change sections class if small screen   */
+/*  on load  */
+/*jQuery(function($) {
+    if ( $(window).width() <= 1279 ) {
+        $('section').removeClass('acrostia__section');
+    } else {
+        $('section').addClass('acrostia__section');
+    }
+});*/
+/*on resize */
+/*$(window).resize(function() {
+    if ( $(window).width() <= 1279 ) {
+        $('section').removeClass('acrostia__section');
+    } else {
+        $('section').addClass('acrostia__section');
+    }
+});*/
+
 /*  menu toggle   */
 jQuery(function($) {
     $('.header__menu-toggle-block_sm>i').click(function() {
@@ -51,6 +69,9 @@ jQuery(function($) {
         $('.header__menu_sm').css('margin-left', '-300px');
     });
     $('.acrostia__main').click(function() {
+        $('.header__menu_sm').css('margin-left', '-300px');
+    });
+    $('li.acrostia__nav-item').click(function() {
         $('.header__menu_sm').css('margin-left', '-300px');
     });
 });
@@ -116,5 +137,5 @@ $(function() {
 
 /*  Mask for input in contact form */
 $(function(){
-    $("#contactsPhoneNumber").mask("+");
+    $("#askFormPhone").mask("+9 (999) 999-9999");
 });

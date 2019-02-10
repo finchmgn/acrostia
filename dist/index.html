@@ -36,7 +36,7 @@
                         <li id="homeButton" class="acrostia__nav-item acrostia__nav-item-home active">Home</li>
                         <li id="servicesButton" class="acrostia__nav-item acrostia__nav-item-services">Services</li>
                         <li id="aboutButton" class="acrostia__nav-item acrostia__nav-item-about">About</li>
-                        <li id="worksButton" class="acrostia__nav-item acrostia__nav-item-works">Works</li>
+                        <!--<li id="worksButton" class="acrostia__nav-item acrostia__nav-item-works">Works</li>-->
                         <li id="contactsButton" class="acrostia__nav-item acrostia__nav-item-contacts">Contacts</li>
                     </ul>
                 </div>
@@ -280,7 +280,7 @@
 
             </div>
         </section>
-        <section class="acrostia__section works" data-section-name="works">
+        <!--<section class="acrostia__section works" data-section-name="works">
             <div class="acrostia__section-content works__content">
                 
                 <div class="container about__container">
@@ -297,7 +297,7 @@
                 </div>
 
             </div>
-        </section>
+        </section>-->
         <section class="acrostia__section contacts" data-section-name="contacts">
             <div class="acrostia__section-content contacts__content">
                 
@@ -312,7 +312,7 @@
                             <div class="contacts__address-block">
                                 <p class="contacts__header">Address</p>
                                 <div class="row">
-                                    <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                                    <div class="col-lg-5 col-md-6 col-sm-12 col-12">
                                         <div class="contacts__address-info-block">
                                             <p class="contacts__address-company-name">Acrostia</p>
                                             <p class="contacts__address-address">Sevenoaks Rd<br/>Sevenoaks TN14 7HR, UK</p>
@@ -336,7 +336,7 @@
                                             </table>
                                         </div>
                                     </div>
-                                    <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                                    <div class="col-lg-7 col-md-6 col-sm-12 col-12">
                                         <div class="contacts__address-map-block">
                                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3218.3112802632804!2d-0.13602416502549516!3d51.50804604277407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d13f649213%3A0xe8ca7c58372f70cb!2sShoryu+Ramen+Regent+Street!5e0!3m2!1sru!2sru!4v1549466106266" width="240" height="210" frameborder="0" style="border:0" allowfullscreen></iframe>
                                         </div>
@@ -348,19 +348,29 @@
                             <div class="contacts__ask-block">
                                 <p class="contacts__header">Ask a question</p>
                                 <form action="#" method="post" class="contacts__ask-form">
-                                    <div class="contacts__ask-form-item-block">
-                                        <div class="contacts__ask-form-name contacts__ask-form-item">
-                                            <label class="sr-only" for="contactsName">Name</label>
-                                            <input type="text" name="contactsName" placeholder="Name">
+                                    <div class="row">
+
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <input class="contacts__ask-form-item form-control" type="text" id="askFormName" placeholder="Name">
+                                            </div>
                                         </div>
-                                        <div class="contacts__ask-form-phone contacts__ask-form-item">
-                                            <label class="sr-only" for="contactsPhoneNumber">Phone number</label>
-                                            <input type="text" id="contactsPhoneNumber" name="contactsPhoneNumber" class="form-control">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <input class="contacts__ask-form-item form-control" type="text" id="askFormPhone" placeholder="Phone">
+                                            </div>
                                         </div>
-                                    </div>    
-                                    <div class="contacts__ask-form-question contacts__ask-form-item">
-                                        <label class="sr-only" for="contactsQuestion">Message</label>
-                                        <input type="text" name="contactsQuestion" placeholder="Your question">
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <textarea class="form-control contacts__ask-form-item" id="askFormQuestion" placeholder="Your question" rows="6"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <button type="button" class="btn btn-danger contacts__ask-form-button" id="askFormSend">SEND</button>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </form>
                             </div>
@@ -369,6 +379,14 @@
                 </div>
                 
             </div>
+            <footer class="contacts__footer">
+                <div class="contacts__footer-social">
+                    <a href="" class="contacts__footer-social-item" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="" class="contacts__footer-social-item" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="" class="contacts__footer-social-item" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="" class="contacts__footer-social-item" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </footer>
         </section>
     </main>
 
