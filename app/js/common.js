@@ -42,6 +42,24 @@ jQuery(function($){
     });
 });
 
+/*  change sections class if small screen   */
+/*  on load  */
+jQuery(function($) {
+    if ( $(window).width() <= 1279 ) {
+        $.scrollify.disable();  
+    } else {
+        $.scrollify.enable();
+    }
+});
+/*on resize */
+$(window).resize(function() {
+    if ( $(window).width() <= 1279 ) {
+        $.scrollify.disable();
+    } else {
+        $.scrollify.enable();
+    }
+});
+
 /*  menu toggle   */
 jQuery(function($) {
     $('.header__menu-toggle-block_sm>i').click(function() {

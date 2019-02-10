@@ -428,6 +428,12 @@ header.acrostia__header {
   width: 130px;
   font-weight: 700; }
 
+.contacts__address-block {
+  margin-bottom: 20px; }
+
+.contacts__address-com {
+  margin-bottom: 20px; }
+
 .contacts__footer {
   position: -webkit-sticky;
   position: sticky;
@@ -500,3 +506,15 @@ header.acrostia__header {
     font-size: 100px; } }
 
 /*  Extra large devices (large desktops, 1200px and up)*/
+@media (max-width: 352px) {
+  .contacts__footer-social {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .contacts__footer-social .contacts__footer-social-item {
+      width: 50%;
+      margin: 10px auto; } }
